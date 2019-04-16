@@ -24,7 +24,7 @@ p {
     background-color:white;
 }
 /* Create a Parallax Effect */
-.bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4, .bgimg-5, .bgimg-6 {
+.bgimg-1, .bgimg-premonition, .bgimg-my_goal, .bgimg-key_words, .bgimg-methods, .bgimg-results, .bgimg-genome, .bgimg-metagenome, .bgimg-metagenome_assembly, .bgimg-reference_genomes, .bgimg-sequence_alignment  {
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -38,25 +38,54 @@ p {
 }
 
 /* Second image (Portfolio) */
-.bgimg-2 {
-  background-image: url("./img/2.jpg");
+.bgimg-premonition {
+  background-image: url("./img/premonition.jpg");
   min-height: 400px;
 }
 
 /* Third image (Contact) */
-.bgimg-3 {
-  background-image: url("./img/3.2.jpg");
+.bgimg-my_goal {
+  background-image: url("./img/my_goal.jpg");
   min-height: 400px;
 }
 
-.bgimg-4 {
-  background-image: url("./img/4.jpg");
+.bgimg-key_words {
+  background-image: url("./img/key_words.jpg");
   min-height: 400px;
 }
 
-.bgimg-5 {
-  background-image: url("./img/5.jpg");
+.bgimg-methods {
+  background-image: url("./img/methods.jpg");
   min-height: 400px;
+}
+
+.bgimg-results {
+  background-image: url("./img/results.jpg");
+  min-height: 400px;
+}
+.bgimg-genome {
+  background-image: url("./img/genome.jpg");
+  min-height: 200px;
+}
+
+.bgimg-metagenome {
+  background-image: url("./img/metagenome.jpg");
+  min-height: 200px;
+}
+
+.bgimg-metagenome_assembly {
+  background-image: url("./img/metagenome_assembly.jpg");
+  min-height: 200px;
+}
+
+.bgimg-reference_genomes {
+  background-image: url("./img/reference_genomes.jpg");
+  min-height: 200px;
+}
+
+.bgimg-sequence_alignment {
+  background-image: url("./img/sequence_alignment.jpg");
+  min-height: 200px;
 }
 
 .bgimg-6 {
@@ -95,6 +124,7 @@ p {
     <a href="#home" class="w3-bar-item w3-button" onclick="toggleFunction()">HOME</a>
     <a href="#premonition" class="w3-bar-item w3-button" onclick="toggleFunction()">PREMONITION</a>
     <a href="#mygoal" class="w3-bar-item w3-button" onclick="toggleFunction()">MY GOAL</a>
+    <a href="#keywords" class="w3-bar-item w3-button" onclick="toggleFunction()">KEY WORDS</a>
     <a href="#methods" class="w3-bar-item w3-button" onclick="toggleFunction()">METHODS</a>
     <a href="#results" class="w3-bar-item w3-button" onclick="toggleFunction()">RESULTS</a>
   </div>
@@ -113,7 +143,7 @@ p {
 </div>
 
 <!-- Second Parallax Image with Portfolio Text -->
-<div class="bgimg-2 w3-display-container w3-opacity-min" id="premonition">
+<div class="bgimg-premonition w3-display-container w3-opacity-min" id="premonition">
         <div class="w3-display-middle">
           <span class="w3-xxlarge w3-text-white w3-wide">PROJECT PREMONITION</span>
         </div>
@@ -134,7 +164,7 @@ p {
 </div>
 
 <!-- Third Parallax Image with Portfolio Text -->
-<div class="bgimg-3 w3-display-container w3-opacity-min" id="mygoal">
+<div class="bgimg-my_goal w3-display-container w3-opacity-min" id="mygoal">
         <div class="w3-display-middle">
           <span class="w3-xxlarge w3-text-white w3-wide">MY GOAL</span>
         </div>
@@ -143,12 +173,70 @@ p {
 <!-- Container (Goal) -->
 <div class="w3-content w3-container w3-padding-64">
   <h2>My goal is to optimize the detection of pathogens through metagenome assembly reference optimization. </h2>
-
 </div>
 
+<div class="bgimg-key_words w3-display-container w3-opacity-min" id="keywords">
+        <div class="w3-display-middle">
+          <span class="w3-xxlarge w3-text-white w3-wide">KEY WORDS</span>
+        </div>
+</div>
+
+<!-- Container (keyword description) -->
+<div class="w3-content w3-container w3-padding-64">
+  <p>These are important to know</p>
+</div>
+
+<div class="bgimg-genome w3-display-container w3-opacity-min">
+        <div class="w3-display-middle">
+          <span class="w3-xlarge w3-text-white w3-wide">genome</span>
+        </div>
+</div>
+<div class="w3-content w3-container w3-padding-64">
+    <p>The complete set of genes or genetic material present in a cell or organism.</p>
+</div>
+
+<div class="bgimg-metagenome w3-display-container w3-opacity-min">
+        <div class="w3-display-middle">
+          <span class="w3-xlarge w3-text-white w3-wide">metagenome</span>
+        </div>
+</div>
+<div class="w3-content w3-container w3-padding-64">
+    <p>A genome sample containing the genomes of multiple organisms.
+    </p>
+</div>
+
+<div class="bgimg-metagenome_assembly w3-display-container w3-opacity-min">
+        <div class="w3-display-middle">
+          <span class="w3-xlarge w3-text-white w3-wide">metagenome assembly</span>
+        </div>
+</div>
+<div class="w3-content w3-container w3-padding-64">
+    <p>The process of identifyting the individual genomes represented in a metagenome. This process is akin to dumping hundreds of jigsaw puzzles onto a table and trying to solve them all at once.
+    </p>
+</div>
+
+<div class="bgimg-reference_genomes w3-display-container w3-opacity-min">
+        <div class="w3-display-middle">
+          <span class="w3-xlarge w3-text-white w3-wide">reference genomes</span>
+        </div>
+</div>
+<div class="w3-content w3-container w3-padding-64">
+    <p>Known genomes previously isolated and sequenced to be used for assembly. They are stored in a digital library.
+    </p>
+</div>
+
+<div class="bgimg-sequence_alignment w3-display-container w3-opacity-min">
+        <div class="w3-display-middle">
+          <span class="w3-xlarge w3-text-white w3-wide">sequence alignment</span>
+        </div>
+</div>
+<div class="w3-content w3-container w3-padding-64">
+    <p>A way of arranging the sequences of DNA to identify regions of similarity between two sequences.
+    </p>
+</div>
 
 <!-- Fourth Parallax Image with Portfolio Text -->
-<div class="bgimg-4 w3-display-container w3-opacity-min" id="methods">
+<div class="bgimg-methods w3-display-container w3-opacity-min" id="methods">
         <div class="w3-display-middle">
           <span class="w3-xxlarge w3-text-white w3-wide">METHODS</span>
         </div>
@@ -156,36 +244,26 @@ p {
 
 <!-- Container (Methods) -->
 <div class="w3-content w3-container w3-padding-64">
-    <p>Key Words:</p>
-    <ul>
-        <li>Genome: the complete set of genes or genetic material present in a cell or organism. </li>
-        <li>Metagenome: a genome sample containing the genomes of multiple organisms.</li>
-        <li>Metagenome Assembly: a term for the process of identifyting the individual genomes represented in a metagenome. This process is akin to dumping hundreds of jigsaw puzzles onto a table and trying to solve them all at once.</li>
-        <li>Reference Genomes: known genomes used for assembly. They are stored in a digital library.</li>
-        <li>Sequence Alignment: a way of arranging the sequences of DNA to identify regions of similarity between two sequences. </li>
-    </ul>
-
-
 <p>The precise goal is to optimize the pool of reference genomes.</p>
 <p>First, we will remove redundant genomes (genomes that have another perfect match) from the pool of reference genomes.</p>
 <ol>
-    <li>Break each file down into pieces</li>
-    <li>Group files by size (only files of the same size can be a perfect match)</li>
-    <li>Check if these grouped genomes match any others using alignment</li>
-    <li>Keep only unique genomes. Toss/Flag replicates</li>
+    <li>Break each file down into pieces.</li>
+    <li>Group files by size (only files of the same size can be a perfect match).</li>
+    <li>Check if these grouped genomes match any others using alignment.</li>
+    <li>Keep only unique genomes. Toss/Flag replicates.</li>
 </ol>
 <p>Next, we will remove contaminated genome samples (genome samples that have more than one genome in them).</p>
 <ol>
-    <li>Align each viral and bacterial genome against every other sample</li>
-    <li>Flag any genome with a match to get a baseline</li>
-    <li>Group flagged genomes by phylogeny</li>
+    <li>Align each viral and bacterial genome against every other sample.</li>
+    <li>Flag any genome with a match to get a baseline.</li>
+    <li>Group flagged genomes by phylogeny.</li>
     <li>Flag genomes that are significantly different from their closest relatives. If there are no close relatives, the genome will remain flagged, but will not be removed.</li>
 </ol>
 </div>
 
 
 <!-- FIFTH Parallax Image with Portfolio Text -->
-<div class="bgimg-5 w3-display-container w3-opacity-min" id="results">
+<div class="bgimg-results w3-display-container w3-opacity-min" id="results">
         <div class="w3-display-middle">
           <span class="w3-xxlarge w3-text-white w3-wide">RESULTS</span>
         </div>
