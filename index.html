@@ -11,6 +11,39 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="icon" href="./img/icon.png">
 <style>
+ol.simple-list {
+    list-style-type: none;
+    list-style-type: decimal !ie; /*IE 7- hack*/
+     
+    margin: 0;
+    margin-left: 3em;
+    padding: 0;
+     
+    counter-reset: li-counter;
+}
+ol.simple-list > li{
+    position: relative;
+    margin-bottom: 20px;
+    padding-left: 0.5em;
+    min-height: 3em;
+    border-left: 2px solid #CCCCCC;
+}
+ol.simple-list > li:before {
+    position: absolute;
+    top: 0;
+    left: -1em;
+    width: 0.8em;
+     
+    font-size: 3em;
+    line-height: 1;
+    font-weight: bold;
+    text-align: right;
+    color: #464646;
+ 
+    content: counter(li-counter);
+    counter-increment: li-counter;
+}
+/*above is all ordered list*/
 body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
 body, html {
   height: 100%;
@@ -264,14 +297,14 @@ p {
 <div class="w3-content w3-container w3-padding-64">
 <p>The precise goal is to optimize the pool of reference genomes.</p>
 <p>First, we will remove redundant genomes (genomes that have another perfect match) from the pool of reference genomes.</p>
-<ol>
+<ol class="simple-list">
     <li>Break each file down into pieces.</li>
     <li>Group files by size (only files of the same size can be a perfect match).</li>
     <li>Check if these grouped genomes match any others using alignment.</li>
     <li>Keep only unique genomes. Toss/Flag replicates.</li>
 </ol>
 <p>Next, we will remove contaminated genome samples (genome samples that have more than one genome in them).</p>
-<ol>
+<ol class="simple-list">
     <li>Align each viral and bacterial genome against every other sample.</li>
     <li>Flag any genome with a match to get a baseline.</li>
     <li>Group flagged genomes by phylogeny.</li>
